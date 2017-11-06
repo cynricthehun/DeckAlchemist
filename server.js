@@ -17,7 +17,8 @@ app.get('/userList', function (req, res) {
 
 app.post('/userList', function (req, res) {
   console.log(req.body);
-  db.userList.insert(req.body, function(err, doc) {
+  db.deck_alchemist_development.insert(req.body, function(err, doc) {
+    console.log(doc);
     res.json(doc);
   })
 });
