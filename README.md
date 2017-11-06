@@ -13,8 +13,7 @@ There are several deck building applications out there, but ours will be set apa
  - Conemu (recommended for window users)
 
 ## Start the project
- 1. Create a the following folder structure in the application.
-   - /data/db
+ 1. Create a the following folder structure in the application directory '/data/db'
  2. Add the mongoDB bin folder to your windows envirnoment path varible.
  3. Restart your console and run mongod -dbpath "C:\projects\project\data\db"
    - be sure that the path leads to the folders you just created.
