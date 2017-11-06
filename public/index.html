@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="DeckAlchemist">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <title>Deck Alchemist</title>
+  </head>
+  <body>
+    <div class="container" ng-controller="AppCtrl">
+      <h1>Welcome to Deck Alchemist!</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Number</th>
+            <th>Admin</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="user in userList">
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.number}}</td>
+            <td>{{user.admin}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="/javascript/angular.min.js"></script>
+    <script src="/controllers/controller.js"></script>
+  </body>
+</html>
