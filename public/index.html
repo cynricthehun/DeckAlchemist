@@ -15,14 +15,27 @@
             <th>Email</th>
             <th>Number</th>
             <th>Admin</th>
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
+          <tr>
+            <td><input class="form-control" ng-model="user.name"></td>
+            <td><input class="form-control" ng-model="user.email"></td>
+            <td><input class="form-control" ng-model="user.number"></td>
+            <td><checkbox class="form-control" ng-model="user.admin"></td>
+            <td>
+              <button class="btn btn-primary" ng-click="addUser()">
+                Add User
+              </button>
+            </td>
+          </tr>
           <tr ng-repeat="user in userList">
             <td>{{user.name}}</td>
             <td>{{user.email}}</td>
             <td>{{user.number}}</td>
             <td>{{user.admin}}</td>
+            <td></td>
           </tr>
         </tbody>
       </table>
