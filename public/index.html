@@ -20,10 +20,15 @@
         </thead>
         <tbody>
           <tr>
-            <td><input class="form-control" ng-model="user.name" type="text"></td>
-            <td><input class="form-control" ng-model="user.email" type="text"></td>
-            <td><input class="form-control" ng-model="user.number" type="text"></td>
-            <td><input class="form-control" ng-model="user.admin"></td>
+            <td><input class="form-control" ng-model="newUser.name" type="text"></td>
+            <td><input class="form-control" ng-model="newUser.email" type="text"></td>
+            <td><input class="form-control" ng-model="newUser.number" type="text"></td>
+            <td>
+              <input
+                class="form-control"
+                ng-model="newUser.admin"
+                type="checkbox">
+            </td>
             <td>
               <button class="btn btn-primary" ng-click="addUser()">
                 Add User

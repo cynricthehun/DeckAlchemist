@@ -3,7 +3,12 @@ myApp.controller('AppCtrl', ['$scope', '$http', function ($scope, $http) {
   console.log("Hello World from controller");
 
   $scope.userList = [];
-  $scope.user = [];
+  $scope.newUser = {
+    name: "",
+    email: "",
+    number: "",
+    admin: ""
+  }
   var refresh = function() {
     $http.get('/userList').then(successCallback, errorCallback);
 
@@ -20,7 +25,7 @@ myApp.controller('AppCtrl', ['$scope', '$http', function ($scope, $http) {
   refresh();
   $scope.addUser = function() {
     console.log($scope.user)
-    $http.post('/userList', $scope.user).success(function(response){
+    $http.post('/userList', $scope.newUser).success(function(response){
       console.log(response);
     });
     refresh();
