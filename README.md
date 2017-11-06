@@ -8,6 +8,19 @@ Decklists are comprised of 75 cards or based on a format type. For example if a 
 
 There are several deck building applications out there, but ours will be set apart by the social networking opportunities of having a friends list and the ability to have card suggestions when building a deck.
 
+## Project Requirements
+1. A place to list all available cards.
+  - Sortable
+  - Filterable
+    - Mana Cost
+    - Color
+2. Profile to hold decklists.
+3. A page to add a deck to a profile.
+4. Deck edit page.
+5. Location to add notes about a deck.
+6. Card notes for a deck. Each card should be able to hold a note.
+
+
 ## Prerequisites
  - MongoDB
  - Conemu (recommended for window users)
@@ -16,6 +29,6 @@ There are several deck building applications out there, but ours will be set apa
  1. Create a the following folder structure in the application directory '/data/db'
  2. Add the mongoDB bin folder to your windows envirnoment path varible.
  3. Restart your console and run mongod -dbpath "C:\projects\project\data\db"
-   - be sure that the path leads to the folders you just created.
-   - to connect to mongo run 'mongo' in a new console window.
+    - be sure that the path leads to the folders you just created.
+    - to connect to mongo run 'mongo' in a new console window.
  4. Open another console window in your project directory. Run 'node server'.
