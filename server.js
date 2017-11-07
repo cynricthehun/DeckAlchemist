@@ -23,7 +23,7 @@ app.post('/userList', function (req, res) {
   })
 });
 
-app.delete('/contactlist/:id', function (req, res){
+app.delete('/userList/:id', function (req, res){
   var id = req.params.id;
   console.log(id);
   db.deck_alchemist_development.remove({_id: mongojs.ObjectId(id)}, function(err, doc){
