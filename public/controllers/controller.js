@@ -38,4 +38,11 @@ myApp.controller('AppCtrl', ['$scope', '$http', function ($scope, $http) {
     });
   };
 
+  $scope.removeUser = function(id) {
+    console.log(id);
+    $http.delete('/userList:' + id).then(function(response){
+      refresh();
+    });
+  };
+
 }]);
