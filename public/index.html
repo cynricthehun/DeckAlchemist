@@ -26,7 +26,10 @@
             <td><input class="form-control" ng-model="newUser.admin" type="checkbox"></td>
             <td>
               <button class="btn btn-primary" ng-click="addUser()">
-                Add User
+                Add
+              </button>
+              <button class="btn btn-info" ng-click="updateUser()">
+                Update
               </button>
             </td>
           </tr>
@@ -38,6 +41,9 @@
             <td>
               <button class="btn btn-danger" ng-click="removeUser(user._id)">
                 Remove
+              </button>
+              <button class="btn btn-success" ng-click="editUser()">
+                Edit
               </button>
             </td>
           </tr>
