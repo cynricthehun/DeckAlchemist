@@ -22,15 +22,14 @@ int main(){
   string command = "mongod -dbpath ";
   std::string result = std::string(command) + std::string(fullPath);
 
-  if (fullPath.find("/data/db") == true){
+  if (fullPath.find("/data/db")){
       cout << result << endl;
+      cout << "Starting MongoDB" << endl;
+      system(result.c_str());
   }
   else{
       cout << "No Database Found." << endl;
   }
-
-  cout << "Starting MongoDB" << endl;
-  system(result.c_str());
   cin.get();
   return 0;
 }
